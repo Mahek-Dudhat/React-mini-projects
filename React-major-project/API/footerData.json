@@ -1,0 +1,17 @@
+[
+    {
+        "icon": "MdPlace",
+        "title": "Find us",
+        "details": "Surat, Gujarat"
+    },
+    {
+        "icon": "IoCallSharp",
+        "title": "Call us",
+        "details": "1111111111"
+    },
+    {
+        "icon": "TbMailPlus",
+        "title": "Mail us",
+        "details": "mahekm452@gmail.com"
+    }
+]

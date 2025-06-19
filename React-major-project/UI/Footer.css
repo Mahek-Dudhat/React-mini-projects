@@ -1,0 +1,140 @@
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p,
+a {
+    font-size: 1rem;
+}
+
+.footer-section {
+    padding-top: 7rem;
+
+    &>.row {
+        /* background-color: rgb(73, 71, 71); */
+        /* background: rgb(1, 1, 114); */
+        background: linear-gradient(to right, #141e30, #243b55);
+        color: #ccc;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.4);
+
+
+
+        & .footer-main-content {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+
+            & .footer-icon {
+                color: #3a4ed5;
+                font-size: 3rem;
+                transition: animation 0.3s ease-in-out;
+                -webkit-transition: animation 0.3s ease-in-out;
+                -moz-transition: animation 0.3s ease-in-out;
+                -ms-transition: animation 0.3s ease-in-out;
+                -o-transition: animation 0.3s ease-in-out;
+
+                &:hover {
+                    cursor: pointer;
+                    animation: iconsAnimate 1s ease-in-out 0.1s 1 normal;
+                    -webkit-animation: iconsAnimate 1s ease-in-out 0.1s 1 normal;
+                }
+            }
+
+            & .footer-content {
+                padding-top: 0.5rem;
+                line-height: -0.5rem;
+            }
+        }
+    }
+
+    .copy-right-area {
+        /* background-color: slategray; */
+        background: linear-gradient(to right, #141e30, #243b55);
+        color: #ccc;
+
+
+        & .container {
+            width: 100%;
+            padding: 2rem;
+
+            & .footer-menu {
+
+                & ul {
+                    display: flex;
+                    gap: 2rem;
+
+                    & li:hover a {
+
+                        color: #00d4ff;
+                    }
+
+                    & li a {
+                        font-size: 14px;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* FOOTER ICONS STYLING: */
+
+@keyframes iconsAnimate {
+    0% {
+        transform: rotate3d(0, 0, 0, 0deg);
+        -webkit-transform: rotate3d(0, 0, 0, 0deg);
+        -moz-transform: rotate3d(0, 0, 0, 0deg);
+        -ms-transform: rotate3d(0, 0, 0, 0deg);
+        -o-transform: rotate3d(0, 0, 0, 0deg);
+    }
+
+    50% {
+        transform: rotate3d(0.5, 0.5, 0.5, 180deg);
+        -webkit-transform: rotate3d(0.5, 0.5, 0.5, 180deg);
+        -moz-transform: rotate3d(0.5, 0.5, 0.5, 180deg);
+        -ms-transform: rotate3d(0.5, 0.5, 0.5, 180deg);
+        -o-transform: rotate3d(0.5, 0.5, 0.5, 180deg);
+    }
+
+    100% {
+        transform: rotate3d(1, 1, 1, 360deg);
+        -webkit-transform: rotate3d(1, 1, 1, 360deg);
+        -moz-transform: rotate3d(1, 1, 1, 360deg);
+        -ms-transform: rotate3d(1, 1, 1, 360deg);
+        -o-transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
+
+/* FOOTER RESPONSVENESS IN ALL DEVICES: */
+@media screen and (max-width:940px) {
+    .footer-main-content {
+        gap: 0rem;
+
+        & .footer-content {
+            & .footer-title {
+                font-size: 0.89rem;
+            }
+
+            & .footer-details {
+                font-size: 0.89rem;
+            }
+        }
+    }
+
+    .copy-right-text {
+
+        /* padding: 2rem; */
+        & p {
+            white-space: normal;
+        }
+
+    }
+}

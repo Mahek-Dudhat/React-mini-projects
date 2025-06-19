@@ -1,0 +1,32 @@
+label {
+    color: white;
+}
+
+.contact-section {
+    margin: 9rem auto;
+    width: 50%;
+
+    & .contact-title {
+        text-align: center;
+    }
+
+    /* & button{
+        
+    } */
+
+    & input,
+    textarea {
+        background-color: transparent;
+
+        &::placeholder {
+            color: white;
+        }
+
+        &:active {
+            color: black;
+        }
+
+    }
+
+
+}

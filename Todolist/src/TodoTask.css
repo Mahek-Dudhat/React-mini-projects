@@ -1,0 +1,15 @@
+.task{
+    margin-top: 3rem;
+}
+.task ul {
+    display: contents;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+}
+
+li span {
+    max-width: 100px;
+}

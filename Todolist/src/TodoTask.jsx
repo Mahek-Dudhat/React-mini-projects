@@ -5,7 +5,7 @@ import CloseIcon from '@mui/icons-material/Close';
 
 export default function TodoTask({ task, removeTask, markDone, removeAllTask }) {
 
-// console.log(task)
+
 
     return (<>
         <div className="task">
